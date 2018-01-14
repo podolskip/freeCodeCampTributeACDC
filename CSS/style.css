@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+/*GENERAL START*/
+.mouseHoover:hover {
+
+    cursor: hand;
+    cursor: pointer;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+
+/*GENERAL END*/
+
+/*HEADER START*/
+
+.menuText{
+    font-size: 2em;
+}
+
+
+
+/*HEADER END*/
+
+/*IMG SECTION START*/
+
+#concertIMG {
+    background-image: url("http://www.ac-dc.net/img1/acdc_header-index.jpg");
+    background-position: center;
+    height: 500px;
+}
+
+/*IMG SECTION END*/
+
+.parent {
+    position: relative;
+    overflow: hidden;
+}
+
+.child {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+
+}
