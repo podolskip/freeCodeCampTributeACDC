@@ -1,4 +1,5 @@
 "use strict";
+var dropdownStatus = false;
 
 /*SCROLL*/
 $(window).scroll(function () {
@@ -20,6 +21,33 @@ $(window).scroll(function () {
 
 });
 
+
+function hideShowMenuButtons() {
+    if (dropdownStatus) {
+        $(".dropDownDiv").css("display", "none");
+    } else {
+        $(".dropDownDiv").css("display", "");
+    }
+    dropdownStatus = !dropdownStatus;
+}
+
+$(document).ready(function(){
+    $("#menuDropdown").click(function () {
+        hideShowMenuButtons();
+    });
+    
+    $(".menuLink").click(function () {
+        hideShowMenuButtons();
+    });
+    
+});
+
+
+
+
+
+
+/*PROMISE TEST*/
 /*#1*/
 
 var i = false;

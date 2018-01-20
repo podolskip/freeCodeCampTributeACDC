@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../TributePage/CSS/style.css" >
 
     <script type="text/javascript" src="../TributePage/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascipt" src="../TributePage/node_modules/bootstrap/dist/js/"></script>
     <script type="text/javascript" src="../TributePage/JS/script.js"></script>
 
 </head>
@@ -23,12 +24,29 @@
     </style>
     <header id="sectionMenu" class="col-md-12 d-inline-block text-center position-fixed">
         <div class="col-md-10 d-inline-block text-left ">
-            <div class="d-inline-block mouseHoover">
-            <div class="d-inline-block mouseHoover">
-                <i class="fa fa-bars fa-2x  d-inline-block" aria-hidden="true"></i>
-                <div  class="inlineBlock menuText"> MENU</div>
-            </div>
 
+                <div id="menuDropdown" class="d-inline-block mouseHoover">
+                    <i class="fa fa-bars fa-2x  d-inline-block" aria-hidden="true"></i>
+                    <div  class="inlineBlock menuText"> MENU</div>
+                </div>
+                <div class="dropDownDiv position-relative " style="display: none">
+                    <div class="inlineBlock">
+                        <a class="menuLink" href="#">Top</a>
+                    </div>
+                    <div class="inlineBlock">
+                        <a class="menuLink" href="#sectionTexts">Reviews</a>
+                    </div>
+                    <div class="inlineBlock">
+                        <a class="menuLink" href="#section12Facts">Facts</a>
+                    </div>
+                    <div class="inlineBlock">
+                        <a class="menuLink" href="#sectionDiscs">Discs</a>
+                    </div>
+                    <div class="inlineBlock">
+                        <a class="menuLink" href="#sectionFooter">Contact</a>
+                    </div>
+
+                </div>
         </div>
     </header>
     <section id="sectionIMG" class=" ">
@@ -79,8 +97,10 @@
                 <li>The current members of the band are: Angus Young (1973-present), Malcolm Young (1973-present), Phil Rudd (1975-1983, 1994-present), Cliff Williams (1977-present), Brian Johnson (1980-present). There have been 18 other former and temporary members.</li>
                 <li>On November 19, 2012, AC/DC released Live at River Plate, their first live album in 20 years. The band have also released 18 studio albums.</li>
                 <li>In April 2014, the band was planning to write and record new material and go on an 40th anniversary tour and dismissed rumours they were planning to quit.</li>
-                <li>SRC: http://www.telegraph.co.uk/culture/music/rockandpopmusic/10769415/ACDC-12-facts-about-the-top-selling-band.html</li>
             </ul>
+            <div class="col-md-12 inlineBlock text-center">
+                    <a title="Link to the source website" target="_blank" href="http://www.telegraph.co.uk/culture/music/rockandpopmusic/10769415/ACDC-12-facts-about-the-top-selling-band.html"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+            </div>
         </div>
     </section>
     <section id="sectionDiscs" class="col-md-12 d-inline-block text-center padding30px">
@@ -194,8 +214,23 @@
             </div>
         </div>
     </section>
-    <footer id="sectionFooter" style="height: 300px;">
 
+    <footer id="sectionFooter" class="col-md-12 d-inline-block text-center padding30px Contact">
+        <div  class="col-md-10 inlineBlock text-left footerStyling">
+            <div class="col-md-12 d-block ">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i> <a target="_blank" href="www.linkedin.com/in/patryk-podolski-2b820641"
+            >Patryk Podolski</a>
+            </div>
+            <div class="col-md-12 d-block ">
+                <i class="fa fa-free-code-camp" aria-hidden="true"></i><a target="_blank" href="https://www.freecodecamp.org">
+                Free_Code_Camp www
+            </a>
+            </div>
+            <div id="copyRights" class="col-md-12 d-block text-center ">
+                <i class="fa fa-copyright" aria-hidden="true"></i> Patyk Podolski for
+                Free_Code_Camp Tribute Page
+            </div>
+        </div>
     </footer>
 
 </body>
